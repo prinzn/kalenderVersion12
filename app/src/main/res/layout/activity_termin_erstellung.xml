@@ -1,0 +1,206 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    tools:context=".TerminErstellung_GUI">
+
+    <EditText
+        android:id="@+id/txt_Terminerstellung_Eingabe_Titel"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/schwarz"
+        android:padding="10dp"
+
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:gravity="center"
+        android:hint="@string/titel"
+        android:textSize="24sp"
+        android:textColor="@color/weiß"
+        android:textColorHint="@color/weiß"
+        android:textStyle="bold"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Switch
+            android:id="@+id/switch_Terminerstellung_Eingabe_JaNein"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/schwarz" />
+
+        <TextView
+            android:id="@+id/txt_Terminerstellung_Beschriftung_Ganztaegig"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/switch_Terminerstellung_Eingabe_JaNein"
+
+            android:text="@string/ganztaegig"
+            android:textColor="@color/grau"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_Terminerstellung_Beschriftung_Start"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:text="@string/start"
+                android:textColor="@color/schwarz"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_Terminerstellung_Eingabe_Datum_Start"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:hint="@string/datum"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/grau"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_Terminerstellung_Eingabe_Zeit_Start"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:hint="@string/zeit"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/grau"
+                android:textSize="20sp" />
+
+        </TableRow>
+        <TableRow
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_Terminerstellung_Beschriftung_Ende"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/ende"
+                android:textColor="@color/schwarz"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_Terminerstellung_Eingabe_Datum_Ende"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/datum"
+                android:textColor="@color/grau"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txt_Terminerstellung_Eingabe_Zeit_Ende"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/zeit"
+                android:textColor="@color/grau"
+                android:textSize="20sp"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <TableRow>
+            <Button
+                android:id="@+id/btn_Terminerstellung_Abbrechen"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@color/schwarz"
+
+                android:text="@string/abbrechen"
+                android:textColor="@color/weiß"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn_Terminerstellung_Speichern"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginStart="20dp"
+
+                android:background="@color/schwarz"
+
+                android:text="@string/speichern"
+                android:textColor="@color/weiß"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txt_Gespeichert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   />
+</LinearLayout>

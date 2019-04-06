@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Shiba Planner</string>
+
+    <string name="einstellungen">Zu den Einstellungen</string>
+    <string name="neuerTermin">neuen Termin erstellen</string>
+    <string name="leererText"> </string>
+
+    <string name="zuvor">zuvor</string>
+    <string name="weiter">weiter</string>
+
+    <string name="titel">Titel eingeben</string>
+    <string name="ganztaegig">Ganztägig</string>
+    <string name="start">Start</string>
+    <string name="wann">Wann?</string>
+    <string name="ende">Ende</string>
+    <string name="datum">tt.mm.yyyy</string>
+    <string name="zeit">HH:mm</string>
+    <string name="zeitMitString">HH:mm</string>
+    <string name="speichern">Speichern</string>
+    <string name="abbrechen">Abbruch</string>
+
+    <string name="terminIstGanztaegig">%1$s findet am %2$s den ganzen Tag lang statt.</string>
+    <string name="terminIstNichtGanztaegig">%1$s findet zwischen dem %2$s um %3$s und dem %4$s um %5$s statt.</string>
+
+    <string name="toastInfoFehlt">Min. eine Information fehlt!</string>
+    <string name="toastTerminGespeichert">Termin wurde gespeichert</string>
+    <string name="toastDatenFalsch">Min. eine Datum- oder Zeitangabe ist falsch!</string>
+
+    <string name="terminLoeschen">Termin löschen</string>
+
+
+    <string name="montag">Mo</string>
+    <string name="dienstag">Di</string>
+    <string name="mittwoch">Mi</string>
+    <string name="donnerstag">Do</string>
+    <string name="freitag">Fr</string>
+    <string name="samstag">Sa</string>
+    <string name="sonntag">So</string>
+
+    <string-array name="monate">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>März</item>
+        <item>April</item>
+        <item>Mai</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Dezember</item>
+    </string-array>
+
+    <string-array name="farben">
+        <item>#4FC3F7</item>    <!--    Januar    -->
+        <item>#4DB6AC</item>    <!--    Februar   -->
+        <item>#81C784</item>    <!--    März      -->
+        <item>#AED581</item>    <!--    April     -->
+        <item>#FFEE58</item>    <!--    Mai       -->
+        <item>#FFCA28</item>    <!--    Juni      -->
+        <item>#FFA726</item>    <!--    Juli      -->
+        <item>#FF7043</item>    <!--    August    -->
+        <item>#EF5350</item>    <!--    September -->
+        <item>#AB47BC</item>    <!--    Oktober   -->
+        <item>#7E57C2</item>    <!--    November  -->
+        <item>#5C6BC0</item>    <!--    Dezember  -->
+    </string-array>
+
+
+</resources>

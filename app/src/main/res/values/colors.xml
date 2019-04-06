@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="weiß">#ffffff</color>
+    <color name="grau">#565656</color>
+    <color name="hellgrau">#E7E7E7</color>
+    <color name="schwarz">#000000</color>
+    <color name="ausgewaehlt">#3ca2a2a2</color>
+
+    <color name="rot">#960000</color>
+    <color name="detail">#676767</color>
+
+    <color name="transparent">#00676767</color>
+
+    <color name="hintergrund">#ffffff</color>
+    <color name="wochentageSchriftFarbe">#000000</color>
+    <color name="schriftFarbe">#ffffff</color>
+</resources>

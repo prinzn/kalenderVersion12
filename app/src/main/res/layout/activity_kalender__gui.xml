@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/hintergrund">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Navigation -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:gravity="end">
+            <Button
+                android:id="@+id/txt_Kalender_HeutigerTag"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+
+                style="@style/SchriftStandard"
+                android:textColor="@color/ausgewaehlt"/>
+
+            <Button
+                android:id="@+id/txt_neuerTermin"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                style="@style/SchriftStandard"
+                android:text="+"/>
+
+        </TableRow>
+    </TableLayout>
+
+        <!-- Monat auswählen -->
+
+    <RelativeLayout
+        android:id="@+id/layoutMonatWechseln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/btn_Kalender_Zuvor"
+            android:src="@drawable/ic_pfeilzuvor_50dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/txt_Kalender_Monat"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textAllCaps="true"
+            android:textColor="@color/weiß"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_Kalender_Weiter"
+
+            android:src="@drawable/ic_pfeilweiter_50dp"
+            android:background="@color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Wochentage -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_Kalender_Mo"
+                style="@style/WochentageStyle"
+                android:text="@string/montag" />
+            <TextView
+                android:id="@+id/txt_Kalender_Di"
+                style="@style/WochentageStyle"
+                android:text="@string/dienstag" />
+            <TextView
+                android:id="@+id/txt_Kalender_Mi"
+                style="@style/WochentageStyle"
+                android:text="@string/mittwoch" />
+            <TextView
+                android:id="@+id/txt_Kalender_Do"
+                style="@style/WochentageStyle"
+                android:text="@string/donnerstag" />
+            <TextView
+                android:id="@+id/txt_Kalender_Fr"
+                style="@style/WochentageStyle"
+                android:text="@string/freitag" />
+            <TextView
+                android:id="@+id/txt_Kalender_Sa"
+                style="@style/WochentageStyle"
+                android:text="@string/samstag" />
+            <TextView
+                android:id="@+id/txt_Kalender_So"
+                style="@style/WochentageStyle"
+                android:text="@string/sonntag" />
+        </TableRow>
+    </TableLayout>
+
+
+    <GridView
+        android:id="@+id/gridView_Kalender_Tabelle_AktuellerMonat"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_Kalender_Momentanes_Datum"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:background="@color/schwarz"
+
+        android:layout_marginTop="5dp"
+
+        style="@style/SchriftStandard"/>
+
+    <ListView
+        android:id="@+id/listView_Termine"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+</LinearLayout>
